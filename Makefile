@@ -3,7 +3,7 @@ LFLAGS = -lmpd
 SOURCES = mpdnp.c
 
 mpdnp:
-	$(CLAGS) $(LFLAGS) $(SOURCES)
+	cc $(CFLAGS) $(LFLAGS) $(SOURCES) -o $@
 
 clean:
 	rm -f *.o mpdnp
